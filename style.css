@@ -1,0 +1,78 @@
+/* style.css */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.sidebar {
+  background-color: #dc3545;
+  color: #fff;
+  height: 100vh;
+  padding: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.sidebar .logo img {
+  width: 100%;
+  max-width: 150px;
+  margin-bottom: 2rem;
+}
+
+.sidebar .nav-link {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.sidebar .nav-link.active {
+  background-color: #ff6347;
+  border-radius: 5px;
+}
+
+.sidebar .nav-link i {
+  margin-right: 1rem;
+}
+
+.content {
+  padding: 2rem;
+  margin-left: 18rem;
+}
+
+.card-info {
+  background-color: #fff;
+  border: none;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.card-info i {
+  font-size: 2rem;
+  color: #dc3545;
+  margin-bottom: 1rem;
+}
+
+.card-info .card-text {
+  font-weight: bold;
+  color: #dc3545;
+}
+
+.chart-container {
+  height: 200px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    margin-left: -18rem;
+    transition: margin-left 0.3s ease;
+  }
+
+  .sidebar.show {
+    margin-left: 0;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+}
