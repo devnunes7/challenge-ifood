@@ -3,12 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ifood Dashboard</title>
+    <title>ifood - Dashboard</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -17,214 +15,124 @@
       <div class="row">
         <div class="col-md-2 sidebar">
           <div class="logo">
-            <img
-              src="./img/ifood-logo-png-branco-300x300-removebg-preview 1.png"
-              alt="ifood logo"
-            />
+            <img src="./img/ifood-removebg-preview.png" alt="ifood logo" />
           </div>
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
-                <i class="bi bi-grid-fill"></i>
-                Dashboard
+              <a class="nav-link active" href="#">
+                <i class="fas fa-tachometer-alt"></i> Dashboard
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <i class="bi bi-search"></i>
-                Consulta
+                <i class="fas fa-search"></i> Consulta
+                
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <i class="bi bi-graph-up"></i>
-                Gestão
+                <i class="fas fa-chart-bar"></i> Gestão
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <i class="bi bi-file-earmark-text"></i>
-                Relatórios
+                <i class="fas fa-file-alt"></i> Relatórios
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <i class="bi bi-shield-fill"></i>
-                Segurança
+                <i class="fas fa-shield-alt"></i> Segurança
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <i class="bi bi-gear-fill"></i>
-                Configurações
+                <i class="fas fa-cog"></i> Configurações
               </a>
             </li>
           </ul>
         </div>
         <div class="col-md-10 content">
+          <h1 class="dashboard-title">Dashboard</h1>
           <div class="row">
-            <div class="col-md-3 mb-3">
-              <div class="card card-info">
+            <div class="col-md-3">
+              <div class="card">
                 <div class="card-body">
-                  <i class="bi bi-currency-exchange"></i>
+                  <i class="fas fa-coins"></i>
                   <h5 class="card-title">Balanço total</h5>
-                  <p class="card-text display-5">R$ 52.988.01</p>
-                  <small class="text-success">
-                    <i class="bi bi-arrow-up-short"></i>
-                    200.56%
-                  </small>
+                  <h2 class="card-text">R$ 52.988,01</h2>
+                  <span class="badge badge-pill badge-success">209,56%</span>
+                  <a href="#" class="btn btn-primary btn-sm">Ver mais</a>
                 </div>
               </div>
             </div>
-            <div class="col-md-3 mb-3">
-              <div class="card card-info">
+            <div class="col-md-3">
+              <div class="card">
                 <div class="card-body">
-                  <i class="bi bi-cash-stack"></i>
+                  <i class="fas fa-coins"></i>
                   <h5 class="card-title">Total gasto</h5>
-                  <p class="card-text display-5">R$ 19.455.01</p>
-                  <small class="text-danger">
-                    <i class="bi bi-arrow-down-short"></i>
-                    0.75%
-                  </small>
+                  <h2 class="card-text">R$ 19.455,01</h2>
+                  <span class="badge badge-pill badge-danger">0.75%</span>
+                  <a href="#" class="btn btn-primary btn-sm">Ver mais</a>
                 </div>
               </div>
             </div>
-            <div class="col-md-3 mb-3">
-              <div class="card card-info">
+            <div class="col-md-3">
+              <div class="card">
                 <div class="card-body">
-                  <i class="bi bi-bag"></i>
+                  <i class="fas fa-shopping-bag"></i>
                   <h5 class="card-title">Sacola</h5>
-                  <p class="card-text display-5">22.564</p>
-                  <small class="text-success">
-                    <i class="bi bi-arrow-up-short"></i>
-                    12%
-                  </small>
+                  <h2 class="card-text">22.564</h2>
+                  <span class="badge badge-pill badge-success">12%</span>
+                  <a href="#" class="btn btn-primary btn-sm">Ver mais</a>
                 </div>
               </div>
             </div>
-            <div class="col-md-3 mb-3">
-              <div class="card card-info">
+            <div class="col-md-3">
+              <div class="card">
                 <div class="card-body">
-                  <i class="bi bi-cash-coin"></i>
+                  <i class="fas fa-dollar-sign"></i>
                   <h5 class="card-title">Pagamento online</h5>
-                  <p class="card-text display-5">R$ 19.455.01</p>
-                  <small class="text-success">
-                    <i class="bi bi-arrow-up-short"></i>
-                    104.04%
-                  </small>
+                  <h2 class="card-text">R$ 19.455,01</h2>
+                  <span class="badge badge-pill badge-success">124.04%</span>
+                  <a href="#" class="btn btn-primary btn-sm">Ver mais</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-6 mb-3">
+          <div class="row mt-4">
+            <div class="col-md-6">
               <div class="card">
                 <div class="card-header">
-                  <h5>Receita no periodo</h5>
-                  <small>Receita diária no periodo</small>
-                  <div class="dropdown">
-                    <button
-                      class="btn btn-outline-secondary dropdown-toggle"
-                      type="button"
-                      id="dropdownMenuButton1"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <i class="bi bi-calendar-date"></i>
-                      Jan 09, 2024 - Jan 15, 2024
-                    </button>
-                    <ul
-                      class="dropdown-menu"
-                      aria-labelledby="dropdownMenuButton1"
-                    >
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Another action</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >Something else here</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
+                  <h3>Receita no período</h3>
                 </div>
                 <div class="card-body">
-                  <canvas id="revenueChart"></canvas>
+                  <p class="card-text">Receita diária no período</p>
+                  <canvas id="receitaChart"></canvas>
                 </div>
               </div>
             </div>
-            <div class="col-md-2 mb-2">
+            <div class="col-md-3">
               <div class="card">
                 <div class="card-header">
-                  <h5>Seus produtos populares</h5>
+                  <h3>Seus produtos populares</h3>
                 </div>
                 <div class="card-body">
-                  <canvas id="popularProductsChart"></canvas>
+                  <canvas id="produtosChart"></canvas>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-6 mb-3">
-              <div class="card">
-                <div class="card-header">
-                  <h5>Estaticas de gastos</h5>
-                </div>
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-md-3 mb-3">
-                      <div class="card card-info">
-                        <div class="card-body">
-                          <h5 class="card-title">Mercadoria</h5>
-                          <div class="chart-container">
-                            <canvas id="mercadoriaChart"></canvas>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                      <div class="card card-info">
-                        <div class="card-body">
-                          <h5 class="card-title">....</h5>
-                          <div class="chart-container">
-                            <canvas id="chart2"></canvas>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                      <div class="card card-info">
-                        <div class="card-body">
-                          <h5 class="card-title">....</h5>
-                          <div class="chart-container">
-                            <canvas id="chart3"></canvas>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                      <div class="card card-info">
-                        <div class="card-body">
-                          <h5 class="card-title">....</h5>
-                          <div class="chart-container">
-                            <canvas id="chart4"></canvas>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      src="https://kit.fontawesome.com/your-fontawesome-kit.js"
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
